@@ -49,3 +49,20 @@ document.querySelector("form").addEventListener("submit", async (event) => {
     console.error("Error converting currency: ", error);
   }
 });
+
+
+// Nav knapp visar vilken sida är aktiv
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("nav ul li a");
+  const currentPath = window.location.pathname.split("/").pop() || "index.html"; 
+
+  navLinks.forEach(link => {
+      const linkPath = link.getAttribute("href").split("/").pop(); 
+
+      if (linkPath === currentPath) {
+          link.classList.add("active"); 
+      } else {
+          link.classList.remove("active"); 
+      }
+  });
+});

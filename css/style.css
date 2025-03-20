@@ -8,7 +8,48 @@ Fonts
     src: url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 }
 
-*{
+@font-face {
+    font-family: 'Inter';
+    src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+    font-style: normal;
+    font-weight: 600;
+}
+
+.inter-black {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*
+=============== 
+Fonts
+===============
+*/
+
+* {
     box-sizing: border-box;
     text-decoration: none;
     margin: 0;
@@ -29,7 +70,8 @@ nav {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    font-family: 'Staatliches';
+    font-family: 'Inter';
+    font-weight: 400;
     padding: 20px;
 }
 
@@ -48,15 +90,24 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a{
-    padding: 10%;
+nav ul li a {
+    padding: 10px 15px;
     color: rgb(0, 162, 255);
+    border-radius: 10px;
+    transition: background-color 0.3s;
 }
 
-nav ul li a:hover{
-    border-radius: 10px;
+nav ul li a:hover {
     background-color: rgb(0, 162, 255);
     color: rgb(0, 0, 0);
+}
+
+nav ul li a.active {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: rgb(0, 162, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 .container {
@@ -66,11 +117,11 @@ nav ul li a:hover{
 
 h1 {
     color: rgb(0, 162, 255);
-    font-family: 'Staatliches';
     text-align: center;
     font-size: 3.5rem;
     padding-top: 20px;
-    margin: 5%;
+    margin-top: 75px;
+    margin-bottom: 25px;
 }
 
 form {
@@ -88,15 +139,18 @@ form {
 }
 
 label {
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     color: rgb(102, 102, 102);
+    margin-left: 4px;
+    margin-bottom: 4px;
 }
 
 input, select {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     padding: 25px;
     font-size: 16px;
-    font-weight: 700;
     margin: 2px;
     border: 1px solid #686868;
     border-radius: 10px;
@@ -123,7 +177,8 @@ button {
     color: rgb(0, 0, 0);
     padding: 10px;
     font-size: 16px;
-    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -137,5 +192,3 @@ button {
 button:hover {
     background: #578be1;
 }
-
-
