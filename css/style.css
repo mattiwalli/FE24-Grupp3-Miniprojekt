@@ -192,3 +192,147 @@ button {
 button:hover {
     background: #578be1;
 }
+
+.currency-container {
+    padding: 40px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+#alphabet-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: transparent; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid rgb(0, 162, 255); 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-btn:hover {
+    background: rgb(0, 162, 255); 
+    color: white; 
+}
+
+.currency-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+    align-items: flex-start;
+}
+
+.currency-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #f5f7fa; 
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 280px; 
+    height: 120px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency-card:hover {
+    transform: scale(1.03);
+}
+
+.category-container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-letter {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 162, 255);
+    margin-bottom: 20px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgb(0, 162, 255);
+}
+
+.currency-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center; 
+    width: 100%;
+}
+
+.currency-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.currency-info strong {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+.currency-info p {
+    font-size: 14px;
+    color: #0f3d2e;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.flag {
+    font-size: 28px; 
+    width: 50px; 
+    height: 35px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px; 
+    background: white;
+    border: 1px solid #ccc; 
+    position: absolute;
+    right: 15px;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+
+
