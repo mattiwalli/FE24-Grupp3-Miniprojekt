@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./js/api.js" defer></script>
     <title>The Grit Exchange</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="active">
-        <a href="#" class="logo">The Grit Exchange</a>
-        
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        </header>
+      <a href="#" class="logo">The Grit Exchange</a>
 
-</head>
-<body>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container">
-        <h1>Currency Exchange</h1>
-        <form>
-            <div class="form-group">
-                <label for="amount">Amount</label>
-                <input type="number" id="amount" placeholder="Enter amount to convert" required>
-            </div>
-            <div class="form-group">
-                <label for="fromCurrency">From Currency</label>
-                <select id="fromCurrency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="INR">INR</option>
-                    <option value="JPY">JPY</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="toCurrency">To Currency</label>
-                <select id="toCurrency">
-                    <option value="USD">USD</option>
-                    <option value="EUR">EUR</option>
-                    <option value="GBP">GBP</option>
-                    <option value="INR">INR</option>
-                    <option value="JPY">JPY</option>
-                </select>
-            </div>
-            <button type="submit">Convert</button>
-        </form>
+      <h1>Currency Exchange</h1>
+      <form>
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount to convert"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="fromCurrency">From Currency</label>
+          <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toCurrency">To Currency</label>
+          <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+          </select>
+        </div>
+        <button type="submit">Convert</button>
+      </form>
     </div>
-
-
-</body>
+  </body>
 </html>
