@@ -43,7 +43,7 @@ document.querySelector("form").addEventListener("submit", async (event) => {
     );
     document.querySelector(
       "#result"
-    ).textContent = `Converted amount: ${conversionData.amount}`;
+    ).textContent = `Converted amount: ${conversionData.result}`;
   } catch (error) {
     document.getElementById("result").textContent = "Error converting currency";
     console.error("Error converting currency: ", error);
