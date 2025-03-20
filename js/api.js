@@ -32,4 +32,10 @@ export async function getAllCurrencies(){
   }
 }
 
+document.querySelector("form").addEventListener("submit", async (event) => {
+ event.preventDefault();
+ const amount = document.querySelector("#amount").value;
+ 
+
+})
 
