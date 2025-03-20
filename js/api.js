@@ -1,5 +1,5 @@
-const API_KEY = "2NFkSv2AVnmF3akthFLbiPYqyHe2wp";
-const API_URL = `https://www.amdoren.com/api/currency.php?api_key=${API_KEY}`;
+const API_KEY = "5c1ccb3b5f6b8f2ff22a37aa17c8d33b";
+const API_URL = `http://api.currencylayer.com/convert?access_key=${API_KEY}`;
 
 // Funktion som konverterar en summa från en valuta till en annan
 async function convertCurrency(amount, from, to) {
