@@ -35,7 +35,18 @@ export async function getAllCurrencies(){
 document.querySelector("form").addEventListener("submit", async (event) => {
  event.preventDefault();
  const amount = document.querySelector("#amount").value;
- 
+ const fromcurrency = document.querySelector("#fromcurrency").value;
+ const toCurrency = document.querySelector("#tocurrency").value;
+
+ try{
+  const conversionData = await convertCurrency(amount, fromcurrency, toCurrency);
+  document.querySelector("#result").textContent = `Converted amount: ${conversionData.amount}`;
+ } catch (error) {
+   document.getElementById("result").textContent = "Error converting currency";
+  console.error("Error converting currency: ", error);
+ }
 
 })
+
+
 
