@@ -199,8 +199,8 @@ button:hover {
 }
 
 #alphabet-filter {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(16, auto); 
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
@@ -221,6 +221,10 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.filter-btn:nth-child(n+17) {
+    grid-column: span 1;
 }
 
 .filter-btn:hover {
@@ -326,6 +330,18 @@ button:hover {
     position: absolute;
     right: 15px;
     object-fit: cover; 
+}
+
+@media (max-width: 1024px) {
+    #alphabet-filter {
+        grid-template-columns: repeat(8, auto); /* 8 per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    #alphabet-filter {
+        grid-template-columns: repeat(5, auto); /* 5 per row on small screens */
+    }
 }
 
 
