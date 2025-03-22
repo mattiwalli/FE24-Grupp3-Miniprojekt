@@ -81,4 +81,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const currencies = await getAllCurrencies();
 
+  if (currencies) {
+    Object.entries(currencies).forEach(([code, name]) => {
+      const option1 = document.createElement("option");
+      option1.value = code;
+      option1.textContent = `${code} - ${name}`;
+      fromCurrencySelect.appendChild(option1);  
+      
+      
+    
+    
+    });
+    }
 });
