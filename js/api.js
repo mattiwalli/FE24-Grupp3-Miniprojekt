@@ -88,7 +88,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       option1.textContent = `${code} - ${name}`;
       fromCurrencySelect.appendChild(option1);  
       
-      
+      const option2 = document.createElement("option");
+      option2.value = code;
+      option2.textContent = `${code} - ${name}`;
+      toCurrencySelect.appendChild(option2);
     
     
     });
