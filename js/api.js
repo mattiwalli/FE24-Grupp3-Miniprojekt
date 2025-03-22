@@ -73,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", async () => {
   const fromCurrencySelect = document.getElementById("fromCurrency");
   const toCurrencySelect = document.getElementById("toCurrency");
@@ -86,14 +84,12 @@ document.addEventListener("DOMContentLoaded", async () => {
       const option1 = document.createElement("option");
       option1.value = code;
       option1.textContent = `${code} - ${name}`;
-      fromCurrencySelect.appendChild(option1);  
-      
+      fromCurrencySelect.appendChild(option1);
+
       const option2 = document.createElement("option");
       option2.value = code;
       option2.textContent = `${code} - ${name}`;
       toCurrencySelect.appendChild(option2);
-    
-    
     });
-    }
+  }
 });
