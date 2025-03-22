@@ -20,12 +20,19 @@ async function convertCurrency(amount, from, to) {
 
 // Funktion som hämtar alla valutor
 async function getAllCurrencies() {
+  const url = `http://api.currencylayer.com/list?access_key=${API_KEY}`;
   try {
-    const response = await fetch(API_URL);
+    const response = await fetch(url);
     const data = await response.json();
-    return data;
+
+    if (!data.success) {
+      throw new Error(data.error.info || "Failed to fetch currencies");
+    }
+
+    return data.currencies;
   } catch (error) {
-    console.error("Error Fetching currensies: ", error);
+    console.error("Error fetching currencies:", error);
+    return {};
   }
 }
 
@@ -50,19 +57,18 @@ document.querySelector("form").addEventListener("submit", async (event) => {
   }
 });
 
-
 // Nav knapp visar vilken sida är aktiv
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("nav ul li a");
-  const currentPath = window.location.pathname.split("/").pop() || "index.html"; 
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
 
-  navLinks.forEach(link => {
-      const linkPath = link.getAttribute("href").split("/").pop(); 
+  navLinks.forEach((link) => {
+    const linkPath = link.getAttribute("href").split("/").pop();
 
-      if (linkPath === currentPath) {
-          link.classList.add("active"); 
-      } else {
-          link.classList.remove("active"); 
-      }
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
 });
