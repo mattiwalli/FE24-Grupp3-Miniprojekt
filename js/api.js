@@ -72,3 +72,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const fromCurrencySelect = document.getElementById("fromCurrency");
+  const toCurrencySelect = document.getElementById("toCurrency");
+
+  const currencies = await getAllCurrencies();
+
+});
