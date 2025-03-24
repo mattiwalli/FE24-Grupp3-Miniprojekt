@@ -77,6 +77,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const fromCurrencySelect = document.getElementById("fromCurrency");
   const toCurrencySelect = document.getElementById("toCurrency");
 
+  fromCurrencySelect.innerHTML = `<option value="">Select currency</option>`;
+  toCurrencySelect.innerHTML = `<option value="">Select currency</option>`;
+
   const currencies = await getAllCurrencies();
 
   if (currencies) {
