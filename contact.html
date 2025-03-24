@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/api.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="inter-regular">
+        <a href="#" class="logo">The Grit Exchange</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="currencies.html">Currencies</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="api.html" class="active">API</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      <h3>Contact Form</h3>
+    </div>
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname"
+          ><i class="fa-solid fa-signature"></i> First Name</label
+        >
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname"
+          ><i class="fa-solid fa-signature"></i> Last Name</label
+        >
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="number"><i class="fa-solid fa-phone"></i> Telephone</label>
+        <input
+          type="number"
+          id="number"
+          name="contact-number"
+          placeholder="Let's Talk.."
+        />
+
+        <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail-us"
+          placeholder="example@example.com"
+        />
+
+        <label for="subject"><i class="fa-solid fa-message"></i> Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
