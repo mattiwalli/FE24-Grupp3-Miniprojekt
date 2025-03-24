@@ -26,11 +26,29 @@
         </header>
 
         <div>
-            <h3></h3>
+            <h3>Contact Form</h3>
           </div>
             <div class="container">
-              <p class="Marcel-api"></p>
-              <p class="Matti-api"></p>
+              <form action="/action_page.php">
+                <label for="fname"><i class="fa-solid fa-signature"></i> First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+            
+                <label for="lname"><i class="fa-solid fa-signature"></i> Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+                <label for="number"><i class="fa-solid fa-phone"></i> Telephone</label>
+                <input type="number" id="number" name="contact-number" placeholder="Let's Talk..">
+          
+            
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="mail" name="mail-us" placeholder="example@example.com">
+                
+            
+                <label for="subject"><i class="fa-solid fa-message"></i> Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
             </div>
             
 </body>
