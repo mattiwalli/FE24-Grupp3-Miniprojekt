@@ -377,13 +377,7 @@ h3 {
     margin-bottom: 20px;    
   }
   
-.container {
-    display: flex;              
-    justify-content: space-between;
-    gap: 40px;                 
-    padding: 30px;             
-    flex-wrap: wrap;           
-  }
+
 
 .Matti-api,.Marcel-api {
     flex: 1;                           
@@ -399,15 +393,19 @@ h3 {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);     
   }
   
-
-.grit-logo {
+  .grit-logo {
     display: flex;
-    width: 90vw;
-    height: 20vh;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
+    padding: 30px 0;
+  }
+  
+  .grit-logo img {
+    max-width: 100%;
+    height: auto;
+    width: 1px; 
+    object-fit: contain;
+  }  
 
 .api-wrapper {
     padding: 30px;
@@ -457,6 +455,84 @@ h3 {
     flex-direction: column;
     justify-content: center;
 }
+
+.about-wrapper {
+    padding: 50px 40px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-wrapper h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 38px;
+    color: rgb(0, 162, 255);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-intro {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .person-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid rgb(0, 162, 255);
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    gap: 10px;
+  }  
+  
+  .person-profile p {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-right: 15px;
+  }
+  
+  .person-profile img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+  }
+  
+  .person-profile img:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }  
+  
 
 @media (max-width: 1024px) {
     #alphabet-filter {
