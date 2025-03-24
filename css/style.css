@@ -364,6 +364,19 @@ button:hover {
     width: 25px;
     height: 25px;
 }
+.Matti-api {
+    font-size: 15px;              
+    color: #444;                  
+    background-color: #eef;       
+    padding: 8px 12px;            
+    border-left: 4px solid #008CBA; 
+    border-radius: 4px;           
+    max-width: 500px;            
+    margin: 10px 0 10px 10px;     
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;            
+  }
+  
 
 .grit-logo {
     display: flex;
