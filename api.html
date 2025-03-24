@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Api</title>
+    <title>API</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,18 +30,35 @@
       </nav>
     </header>
 
-    <div>
+    <div class="api-wrapper">
       <h3>API Information</h3>
-    </div>
-    <div class="container">
-      <p class="Marcel-api"></p>
-      <p class="Matti-api">
-        I chose the CurrencyLayer API for my project because it was easy to use.
-        I only needed an API key to get started. This API lets me convert one
-        currency to another and also shows a list of all available currencies.
-        The documentation was clear and simple. I would recommend this API for
-        small and medium projects since it is easy to access and works well.
-      </p>
-    </div>
+      <div class="api-container">
+
+        <div class="api-section">
+          <h4 class="api-title">REST Countries API</h4>
+          <div class="Marcel-api">
+            <p>
+              We used the REST Countries API to get information about different countries, like names, flags, currencies, and country codes.
+              This helped us show clear and useful details along with the exchange rates in the app.
+            </p>
+          </div>
+        </div>
+    
+
+        <div class="api-section">
+          <h4 class="api-title">CurrencyLayer API</h4>
+          <div class="Matti-api">
+            <p>
+              I chose the CurrencyLayer API for my project because it was easy to use.
+              I only needed an API key to get started. This API lets me convert one
+              currency to another and also shows a list of all available currencies.
+              The documentation was clear and simple. I would recommend this API for
+              small and medium projects since it is easy to access and works well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>    
+    
   </body>
 </html>
