@@ -127,7 +127,7 @@ h1 {
 form {
     background-color: white;
     height: 500px;
-    width: 100vw;
+    width: 90vw;
     border-radius: 30px;
     padding: 20px;
 }
@@ -330,6 +330,23 @@ button:hover {
     position: absolute;
     right: 15px;
     object-fit: cover; 
+}
+
+.about-text h3{
+    margin: 10px;
+    color: rgb(0, 162, 255);
+}
+.about-text h5{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.grit-logo {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 @media (max-width: 1024px) {
