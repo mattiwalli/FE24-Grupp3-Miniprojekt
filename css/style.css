@@ -332,18 +332,39 @@ button:hover {
     object-fit: cover; 
 }
 
-.about-text h3{
+.main {
     margin: 10px;
+}
+
+.about-text h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
     color: rgb(0, 162, 255);
+    margin-bottom: 20px;
 }
 .about-text h5{
-    margin: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
     color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.about-us-information {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+
+.Hampus-information img {
+    width: 25px;
+    height: 25px;
 }
 
 .grit-logo {
     display: flex;
     width: 90vw;
+    height: 20vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
