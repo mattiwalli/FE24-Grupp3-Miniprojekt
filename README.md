@@ -34,10 +34,6 @@ This app integrates reliable APIs to deliver accurate and real-time currency and
 ![](https://i.imgur.com/a99diXc.png)
 ![](https://i.imgur.com/2NvRIGd.png)
 
-### Air Quality Page
-![](https://github.com/AdrianTayeh/fe24-vc-grupp4/blob/Gustafs/Screenshot%202025-03-24%20at%2020.02.51.png)
-![](https://github.com/AdrianTayeh/fe24-vc-grupp4/blob/Gustafs/Screenshot%202025-03-24%20at%2020.14.09.png)
-
 ### About Us Page
 ![](https://i.imgur.com/Lcqn1Ua.png)
 
