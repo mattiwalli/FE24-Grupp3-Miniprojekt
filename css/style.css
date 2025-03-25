@@ -69,15 +69,15 @@ header {
 
 nav {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     font-family: 'Inter';
     font-weight: 400;
     padding: 20px;
 }
 
 nav .logo {
-    font-size: 24px; 
+    font-size: 24px;
     color: rgb(0, 162, 255);
 }
 
@@ -132,7 +132,8 @@ form {
     padding: 20px;
 }
 
-.form-group-amount, .form-group-currency {
+.form-group-amount,
+.form-group-currency {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
@@ -146,7 +147,8 @@ label {
     margin-bottom: 4px;
 }
 
-input, select {
+input,
+select {
     font-family: "Inter", sans-serif;
     font-weight: 600;
     padding: 25px;
@@ -166,7 +168,7 @@ input, select {
 
 #result {
     text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 25px;
     margin: 10px 0;
 }
@@ -200,16 +202,16 @@ button:hover {
 
 #alphabet-filter {
     display: grid;
-    grid-template-columns: repeat(16, auto); 
+    grid-template-columns: repeat(16, auto);
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
 
 .filter-btn {
-    background: transparent; 
-    color: rgb(255, 255, 255); 
-    border: 2px solid rgb(0, 162, 255); 
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 162, 255);
     font-size: 18px;
     font-weight: bold;
     border-radius: 50%;
@@ -228,15 +230,15 @@ button:hover {
 }
 
 .filter-btn:hover {
-    background: rgb(0, 162, 255); 
-    color: white; 
+    background: rgb(0, 162, 255);
+    color: white;
 }
 
 .currency-list {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -245,11 +247,11 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    background: #f5f7fa; 
+    background: #f5f7fa;
     border-radius: 12px;
     padding: 15px 20px;
-    width: 280px; 
-    height: 120px; 
+    width: 280px;
+    height: 120px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
     border: 1px solid #e0e0e0;
@@ -292,7 +294,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
 }
 
@@ -318,31 +320,32 @@ button:hover {
 }
 
 .flag {
-    font-size: 28px; 
-    width: 50px; 
-    height: 35px; 
+    font-size: 28px;
+    width: 50px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px; 
+    border-radius: 6px;
     background: white;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     position: absolute;
     right: 15px;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .main {
     margin: 10px;
 }
 
-.about-text h3{
+.about-text h3 {
     font-family: 'Inter', sans-serif;
     font-size: 30px;
     color: rgb(0, 162, 255);
     margin-bottom: 20px;
 }
-.about-text h5{
+
+.about-text h5 {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: rgb(255, 255, 255);
@@ -360,85 +363,87 @@ button:hover {
     width: 25px;
     height: 25px;
 }
+
 .Matti-information img {
     width: 25px;
     height: 25px;
 }
+
 .marcel-information img {
     width: 25px;
     height: 25px;
 }
 
 h3 {
-    text-align: center;    
-    font-size: 46px;        
-    font-weight: bold;        
-    color: #007BFF;         
-    margin-bottom: 20px;    
-  }
-  
+    text-align: center;
+    font-size: 46px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
 
+.Matti-api,
+.Marcel-api {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    font-size: 20px;
+    color: #222;
+    background-color: #eef;
+    padding: 20px;
+    border-left: 6px solid #007BFF;
+    border-radius: 8px;
+    line-height: 1.8;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
 
-.Matti-api,.Marcel-api {
-    flex: 1;                           
-    min-width: 400px;                 
-    max-width: 600px;                  
-    font-size: 20px;                    
-    color: #222;                        
-    background-color: #eef;              
-    padding: 20px;                      
-    border-left: 6px solid #007BFF;     
-    border-radius: 8px;                 
-    line-height: 1.8;                  
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);     
-  }
-  
-  .grit-logo {
+.grit-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 0;
-  }
-  
-  .grit-logo img {
+}
+
+.grit-logo img {
     max-width: 100%;
     height: auto;
-    width: 1px; 
+    width: 1px;
     object-fit: contain;
-  }  
+}
 
 .api-wrapper {
     padding: 30px;
     font-family: 'Inter', sans-serif;
-  }
-  
-  .api-container {
+}
+
+.api-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 40px;
     margin-top: 20px;
-  }
-  
-  .api-section {
+}
+
+.api-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1 1 300px;
     max-width: 400px;
     min-width: 300px;
-  }
-  
-  .api-title {
+}
+
+.api-title {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: rgb(0, 162, 255);
     margin-bottom: 10px;
     text-align: center;
-  }  
+}
 
-.Matti-api, .Marcel-api {
+.Matti-api,
+.Marcel-api {
     background: #f5f7fa;
     border-radius: 12px;
     padding: 20px;
@@ -462,25 +467,25 @@ h3 {
     color: white;
     max-width: 1000px;
     margin: 0 auto;
-  }
-  
-  .about-wrapper h2 {
+}
+
+.about-wrapper h2 {
     font-family: 'Inter', sans-serif;
     font-size: 38px;
     color: rgb(0, 162, 255);
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .about-intro {
+}
+
+.about-intro {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
     line-height: 1.6;
-  }
-  
-  .person-profile {
+}
+
+.person-profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -491,65 +496,59 @@ h3 {
     border-radius: 10px;
     margin-bottom: 25px;
     gap: 10px;
-  }  
-  
-  .person-profile p {
+}
+
+.person-profile p {
     flex: 1;
     font-size: 15px;
     line-height: 1.6;
     margin-right: 15px;
-  }
-  
-  .person-profile img {
+}
+
+.person-profile img {
     width: 28px;
     height: 28px;
     transition: transform 0.3s ease;
-  }
-  
-  .person-profile img:hover {
-    transform: scale(1.1);
-  }
+}
 
-  .social-icons {
+.person-profile img:hover {
+    transform: scale(1.1);
+}
+
+.social-icons {
     display: flex;
     gap: 12px;
     align-items: center;
     padding-left: 10px;
-  }
-  
-  .social-icons a {
+}
+
+.social-icons a {
     display: inline-flex;
     align-items: center;
-  }
-  
-  .social-icons img {
+}
+
+.social-icons img {
     width: 28px;
     height: 28px;
     border-radius: 4px;
     transition: transform 0.2s ease;
-  }
-  
-  .social-icons img:hover {
+}
+
+.social-icons img:hover {
     transform: scale(1.1);
-  }  
-  
+}
+
 
 @media (max-width: 1024px) {
     #alphabet-filter {
-        grid-template-columns: repeat(8, auto); /* 8 per row on medium screens */
+        grid-template-columns: repeat(8, auto);
+        /* 8 per row on medium screens */
     }
 }
 
 @media (max-width: 600px) {
     #alphabet-filter {
-        grid-template-columns: repeat(5, auto); /* 5 per row on small screens */
+        grid-template-columns: repeat(5, auto);
+        /* 5 per row on small screens */
     }
 }
-
-
-
-
-
-
-
-
