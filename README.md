@@ -9,7 +9,6 @@ This project delivers real-time currency exchange rates through a user-friendly 
 * **Clean Conversion Interface:** A simple and user-friendly layout that allows users to input an amount and select currencies for quick conversion.
 * **Country & Currency Info:** Displays detailed currency data including country names, currency codes, and flags using the REST Countries API.
 * **Currency List by Alphabet:** Browse a comprehensive list of global currencies, filterable by starting letter for easy navigation.
-* **Swap Functionality:** Easily switch between "From" and "To" currencies with a single click.
 * **Responsive Design:** Optimized for both mobile and desktop users to ensure a seamless experience on any device.
 * **Modern UI:** A visually appealing and consistent design powered by Google Fonts and custom CSS.
 
