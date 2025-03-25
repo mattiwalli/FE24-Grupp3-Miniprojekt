@@ -12,13 +12,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
     const manualFlags = {
-        "EUR": "https://flagcdn.com/w320/eu.png",  // European Union
-        "GBP": "https://flagcdn.com/w320/gb.png",  // United Kingdom
-        "AFN": "https://flagcdn.com/w320/af.png",  // Correct Afghanistan flag
-        "AUD": "https://flagcdn.com/w320/au.png",  // Correct Australia flag
-        "ILS": "https://flagcdn.com/w320/il.png",  // Israeli Shekel
-        "DKK": "https://flagcdn.com/w320/dk.png",  // Danish Krone
-        "USD": "https://flagcdn.com/w320/us.png"   // US Dollar
+        "EUR": "https://flagcdn.com/w320/eu.png",  
+        "GBP": "https://flagcdn.com/w320/gb.png",  
+        "AFN": "https://flagcdn.com/w320/af.png",  
+        "AUD": "https://flagcdn.com/w320/au.png",  
+        "ILS": "https://flagcdn.com/w320/il.png",  
+        "DKK": "https://flagcdn.com/w320/dk.png",  
+        "USD": "https://flagcdn.com/w320/us.png"   
     };
 
     async function fetchCurrencies() {
